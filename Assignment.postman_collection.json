@@ -1,0 +1,135 @@
+{
+	"info": {
+		"_postman_id": "a01aa35f-7082-498f-8124-0d694ce2384f",
+		"name": "Assignment",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23870153"
+	},
+	"item": [
+		{
+			"name": "Create New User",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "username",
+							"value": "Anandhu",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "anandhu@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "Ananadhu@12345",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/Assignment/API/signupApi.php?username=ammootty&email=ammu@gmail.com&password=ammu!1234567",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"Assignment",
+						"API",
+						"signupApi.php"
+					],
+					"query": [
+						{
+							"key": "username",
+							"value": "ammootty"
+						},
+						{
+							"key": "email",
+							"value": "ammu@gmail.com"
+						},
+						{
+							"key": "password",
+							"value": "ammu!1234567"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login User",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/Assignment/API/loginApi.php?username=Ammukutty&password=Ammu@123",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"Assignment",
+						"API",
+						"loginApi.php"
+					],
+					"query": [
+						{
+							"key": "username",
+							"value": "Ammukutty"
+						},
+						{
+							"key": "password",
+							"value": "Ammu@123"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Import Csv",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "csv-file",
+							"value": "#ID\tProduct Name\tPrice\tSKU\tDescription\n1\tvariation\t300\twoo-vneck-tee\tLorem ipsum dolor sit amet , consectetur adipiscing elit.Vestibulum sagittis orci ac odio dictum tincidunt.Denec ut metus leo .Class aptent\n2\tsimple\t600\twoo-hoodie\tLorem ipsum dolor sit amet , consectetur adipiscing elit.Vestibulum sagittis orci ac odio dictum tincidunt.Denec ut metus leo .Class aptent\n3\tnew jersy\t400\twoo-hoodie-with-logo\tLorem ipsum dolor sit amet , consectetur adipiscing elit.Vestibulum sagittis orci ac odio dictum tincidunt.Denec ut metus leo .Class aptent\n4\tvirtual\t450\twoo-tshirt\tLorem ipsum dolor sit amet , consectetur adipiscing elit.Vestibulum sagittis orci ac odio dictum tincidunt.Denec ut metus leo .Class aptent\n5\tblanket\t200\twoo-cap\tLorem ipsum dolor sit amet , consectetur adipiscing elit.Vestibulum sagittis orci ac odio dictum tincidunt.Denec ut metus leo .Class aptent\n6\tgoogly\t100\twoo-belt\tLorem ipsum dolor sit amet , consectetur adipiscing elit.Vestibulum sagittis orci ac odio dictum tincidunt.Denec ut metus leo .Class aptent\n7\tsimus\t250\twoo-sunglasses\tLorem ipsum dolor sit amet , consectetur adipiscing elit.Vestibulum sagittis orci ac odio dictum tincidunt.Denec ut metus leo .Class aptent\n8\tbloh\t800\twoo-beanie\tLorem ipsum dolor sit amet , consectetur adipiscing elit.Vestibulum sagittis orci ac odio dictum tincidunt.Denec ut metus leo .Class aptent\n9\tvariable\t100\twoo-polo\tLorem ipsum dolor sit amet , consectetur adipiscing elit.Vestibulum sagittis orci ac odio dictum tincidunt.Denec ut metus leo .Class aptent\n10\tglobal\t150\twoo-single\tLorem ipsum dolor sit amet , consectetur adipiscing elit.Vestibulum sagittis orci ac odio dictum tincidunt.Denec ut metus leo .Class aptent\n11\tvariety\t1000\twoo-vneck-tee-red\tLorem ipsum dolor sit amet , consectetur adipiscing elit.Vestibulum sagittis orci ac odio dictum tincidunt.Denec ut metus leo .Class aptent\n12\tlocal\t235\twoo-beanie-logo\tLorem ipsum dolor sit amet , consectetur adipiscing elit.Vestibulum sagittis orci ac odio dictum tincidunt.Denec ut metus leo .Class aptent\n13\tlooming\t450\twoo-pennant\tLorem ipsum dolor sit amet , consectetur adipiscing elit.Vestibulum sagittis orci ac odio dictum tincidunt.Denec ut metus leo .Class aptent\n14\tstreaming\t275\twoo-long-sleev-tee\tLorem ipsum dolor sit amet , consectetur adipiscing elit.Vestibulum sagittis orci ac odio dictum tincidunt.Denec ut metus leo .Class aptent",
+							"contentType": "text/plain",
+							"type": "text"
+						},
+						{
+							"key": "",
+							"value": "",
+							"contentType": "",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/Assignment/API/import-data.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"Assignment",
+						"API",
+						"import-data.php"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
